@@ -34,14 +34,14 @@ public class HelloWorld {
     // Error. Required long, but provided double.
 
     // 7. Change your code to assign the value 123L (Note the 'L' at the end) to myNumber.
-    myNumber = 123L;
-        System.out.println(myNumber);
+//    myNumber = 123L;
+//        System.out.println(myNumber);
 
     // 8. Change your code to assign the value 123 to myNumber.
-    myNumber = 123;
-        System.out.println(myNumber);
+//    myNumber = 123;
+//        System.out.println(myNumber);
     // Why does assigning the value 3.14 to a variable declared as a long not compile, but assigning an integer value does?
-
+    // Integers do not accept decimal numbers.
 
     // 9. Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
     // float myNumber = 3.14;
