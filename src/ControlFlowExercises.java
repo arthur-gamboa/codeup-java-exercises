@@ -21,9 +21,9 @@ public class ControlFlowExercises {
         } while (true) ;
             System.out.println("Goodbye.");
 
-//    doWhile(2);
-//    fizzBuzz();
-//    table(scanner);
+    doWhile(2);
+    fizzBuzz();
+    table(scanner);
     }
 
 
