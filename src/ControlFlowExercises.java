@@ -9,6 +9,8 @@ public class ControlFlowExercises {
         System.out.println(i++);
     }
 
+
+
         do {
             System.out.println("Please enter your grade from 0 - 100");
             int grade = scanner.nextInt();
@@ -18,8 +20,11 @@ public class ControlFlowExercises {
             if (!choice.equalsIgnoreCase("Yes") && !choice.equalsIgnoreCase("yea") && !choice.equalsIgnoreCase("y")) {
                 break;
             }
-        } while (true) ;
+        } while (true);
             System.out.println("Goodbye.");
+
+
+
 
     doWhile(2);
     fizzBuzz();
@@ -56,7 +61,7 @@ public class ControlFlowExercises {
         for (int i = 1; i <= input; i++) {
             int squared = i*i;
             int cubed = i*i*i;
-            System.out.printf("%-11d | %-11d | %-11d%n", i, squared, cubed);
+            System.out.printf("\033[0;33m%-11d | \033[0;34m%-11d | \033[0;35m%-11d%n", i, squared, cubed);
         }
     }
 
@@ -65,9 +70,9 @@ public class ControlFlowExercises {
             System.out.println("A");
         } else if (grade >= 80 && grade <= 87) {
             System.out.println("B");
-        } else if (grade >= 76 && grade <= 79) {
+        } else if (grade >= 70 && grade <= 79) {
             System.out.println("C");
-        } else if (grade >= 60 && grade <= 66) {
+        } else if (grade >= 60 && grade <= 69) {
             System.out.println("D");
         } else if (grade <= 59) {
             System.out.println("F");
@@ -76,9 +81,8 @@ public class ControlFlowExercises {
         }
     }
 
+    public static void plusMinus() {
 
-
-
-
+    }
 
 }
