@@ -7,12 +7,12 @@ public class MethodsExercises {
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
 
-        MethodsExercises.addition(2, 2);
-        MethodsExercises.subtraction(3, 3);
-        MethodsExercises.multiplication(4, 4);
-        MethodsExercises.division(49, 7);
-        MethodsExercises.modulus(10, 7);
-        MethodsExercises.getInteger(1, 10);
+//        MethodsExercises.addition(2, 2);
+//        MethodsExercises.subtraction(3, 3);
+//        MethodsExercises.multiplication(4, 4);
+//        MethodsExercises.division(49, 7);
+//        MethodsExercises.modulus(10, 7);
+//        MethodsExercises.getInteger(1, 10);
 
         MethodsExercises.getFactorial(sc);
 
@@ -32,6 +32,16 @@ public class MethodsExercises {
         int multiply = num1 * num2;
         System.out.println("Multiplication: " + multiply);
     }
+
+
+//    // multiply by adding
+//    public static int multiAdd(int base, int multi) {
+//        int total = 0;
+//        for (int multi = 0; i < multi; i++) {
+//            total += base;
+//        }
+//        return total;
+//    }
 
     public static void division(int num1, int num2) {
         int divide = num1 / num2;
@@ -58,16 +68,17 @@ public class MethodsExercises {
     }
 
     public static long getFactorial(Scanner sc) throws InterruptedException {
-        System.out.println("Now, enter another number between 1 and 10.");
+        System.out.println("Choose a number between 1 and 10.");
         long input = sc.nextInt();
 
-        if (input < 0 || input > 10) {
+        if (input < 1 || input > 10) {
             System.out.println("Number must be between 1 and 10");
             return getFactorial(sc);
         } else {
             long count = 1;
             for (int i = 1; i <= input; i++) {
-                count = count * i;
+                count *= i;
+                System.out.println(i + "!" + " = " + count);
             }
         System.out.println("Factorial output of " + input + " is: " + count);
                 System.out.println("Would you like to continue?");

@@ -26,8 +26,8 @@ public class ControlFlowExercises {
 
 
 
-    doWhile(2);
-    fizzBuzz();
+//    doWhile(2);
+//    fizzBuzz();
     table(scanner);
     }
 
