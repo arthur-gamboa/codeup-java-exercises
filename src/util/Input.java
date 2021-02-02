@@ -55,6 +55,9 @@ public class Input {
         }
     }
 
+    public int getInt(String s) {
+    }
+
 //    public static void main(String[] args) {
 //        Input in = new Input();
 //    }
