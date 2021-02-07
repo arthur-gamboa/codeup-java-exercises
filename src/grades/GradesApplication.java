@@ -4,7 +4,7 @@ import java.util.HashMap;
 public class GradesApplication {
     public static void main(String[] args) {
 
-        HashMap<Integer, Student> students = new HashMap<>();
+        HashMap<Student, Student> students = new HashMap<>();
 
 //TODO: Create at least 4 Student objects with at least 3 grades each, and add them to the map.
         Student albert = new Student("Albert");
@@ -24,11 +24,11 @@ public class GradesApplication {
         denise.addGrade(72);
         denise.addGrade(70);
 
-        students.put(1, albert);
-        students.put(2, bernard);
-        students.put(3, charlie);
-        students.put(4, charlie);
-        System.out.println(students.toString());
+        students.put(albert, albert);
+//        students.put(bernard);
+//        students.put(3, charlie);
+//        students.put(4, charlie);
+        System.out.println(students);
 
     }
 }
