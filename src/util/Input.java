@@ -33,9 +33,9 @@ public class Input {
     public int getInt() {
         System.out.println("Please enter an integer: %n");
         return this.scanner.nextInt();
-        // a;lskdjf;alksdjf;alksdjf;a
+        // Exceptions and Error Handling Exercise Edits
 //        int number = Integer.valueOf(getString());
-        // ad;lkjasd;lfkajd;flakjd;lakj
+        // Exceptions and Error Handling Exercise Edits
 //        return number;
     }
 
@@ -43,7 +43,7 @@ public class Input {
         while (true) {
             System.out.printf("Please enter an integer between %d and %d: %n", min, max);
             int answer = this.scanner.nextInt();
-            //as;dlfkjasd;lkfjasd;lkfja;s
+            // Exceptions and Error Handling Exercise
             int number;
             try {
                 number = Integer.valueOf(getString());
@@ -52,7 +52,7 @@ public class Input {
                 System.out.println("Wrong input, try again!");
                 return getInt();
             }
-            //;asdlkjfa;ldskfja;sdlkjf;asdjkl
+            // Exceptions and Error Handling Exercise
 //            if (answer >= min && answer <= max) {
 //                return answer;
 //            }
